@@ -1,0 +1,26 @@
+{
+  "name": "tree-sitter-cadsim",
+  "version": "0.1.0",
+  "description": "tree-sitter grammar for cadsim",
+  "main": "bindings/node",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sorens/cadsim-grammar"
+  },
+  "keywords": [
+    "tree-sitter",
+    "parser",
+    "cdl",
+    "cadsim"
+  ],
+  "author": "steve@config.com",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "tree-sitter-cli": "^0.24.0"
+  },
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test",
+    "parse": "tree-sitter parse"
+  }
+}
