@@ -217,6 +217,10 @@
           "name": "string"
         },
         {
+          "type": "STRING",
+          "value": ","
+        },
+        {
           "type": "SYMBOL",
           "name": "string"
         }

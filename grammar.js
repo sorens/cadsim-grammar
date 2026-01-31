@@ -58,10 +58,9 @@ module.exports = grammar({
     // content-property := "content:" quoted-string
     content_property: ($) => seq("content:", $.string),
 
-    // metadata-property := "metadata:" quoted-string quoted-string
-    // Simplified: metadata is always key-value pair(s), inline or block form
-    // is a presentation detail not captured in tree-sitter
-    metadata_property: ($) => seq("metadata:", $.string, $.string),
+    // metadata-property := "metadata:" quoted-string "," quoted-string
+    // Inline form: metadata: "key", "value"
+    metadata_property: ($) => seq("metadata:", $.string, ",", $.string),
 
     // content-generate-property := "content_generate:" integer
     content_generate_property: ($) => seq("content_generate:", $.integer),
